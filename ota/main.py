@@ -1,4 +1,4 @@
-print('Duck_OTA_Rafael')
+print('Duck_OTA')
 
 # Se você conseguiu fazer tudo certo, o print acima deve aparecer no relatório do seu equipamento
 
