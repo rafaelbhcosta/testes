@@ -36,7 +36,7 @@ else:
 #---
 
 from duck import Duck
-OTA = Duck(user="rafaelbhcosta", repo="duck_ota", working_dir="duck", files=["boot.py", "main.py"])
+OTA = Duck(user="rafaelbhcosta", repo="teste", working_dir="ota", files=["main.py"])
 
 try:
     if OTA.update():
