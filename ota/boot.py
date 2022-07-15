@@ -13,8 +13,8 @@ from time import sleep
 #Conectar com o wifi
 #-------------------
 
-ssid = ""
-password = ""
+ssid = "carpeado"
+password = "142704@lcs"
 
 #sistema que vai conectar a EPS ao seu wifi
 station = network.WLAN(network.STA_IF)
@@ -34,10 +34,9 @@ else:
 #---
 #OTA
 #---
-
+token = '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'
 from duck import Duck
-OTA = Duck(user="rafaelbhcosta", repo="teste", working_dir="ota", files=["main.py"])
-
+OTA = Duck(user="rafaelbhcosta", repo="teste", working_dir="ota", files=["main.py"], headers={'Authorization': 'token {}'.format(token)})
 try:
     if OTA.update():
         print('Novos arquivos encontrados. Baixando!')
@@ -49,6 +48,6 @@ try:
         machine.reset()
 
 except:
-    print('Sem atualizações no momento')
+    print('Sem atualizações no momento.')
     None
 
